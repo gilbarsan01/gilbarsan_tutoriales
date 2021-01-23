@@ -26,3 +26,13 @@ spec:
                 name: hello-v2-svc
                 port:
                   number: 8080
+    - host: v3.hello-world.info
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: hello-v3-svc
+                port:
+                  number: 8080
