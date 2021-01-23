@@ -6,13 +6,13 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: v1.peladonerd.local 
+  - host: v1.ejemplodominio.local 
     http:
       paths:
       - backend:
           serviceName: hello-v1-svc
           servicePort: 80
-  - host: v2.peladonerd.local
+  - host: v2.ejemplodominio.local
     http:
       paths:
       - backend:
